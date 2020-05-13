@@ -1,0 +1,5 @@
+Reigate Motor Company
+
+The following needs to be added below the title..
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
