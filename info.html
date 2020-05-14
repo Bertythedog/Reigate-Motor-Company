@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-DataTables.css">
     <link rel="stylesheet" href="assets/css/Card-Group1-Shadow.css">
+    <link rel="stylesheet" href="assets/css/Data-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Data-Table.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/Navbar---Logo-Middle---Phone-Logo-Up.css">
@@ -20,25 +25,31 @@
 </head>
 
 <body style="width: auto;height: auto;min-height: 0;">
-    <nav class="navbar navbar-light navbar-expand-md sticky-top" style="background-color: #2196F3;">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item navigationitemsleft" role="presentation"><a class="nav-link active" href="index.html" style="font-family: Montserrat, sans-serif;font-size: 22px;color: #fff;" target="_top">Home</a><a class="nav-link" href="index.html#open-times" style="color: #fff;font-size: 22px;font-family: Montserrat, sans-serif;">Open</a></li>
-                    <li
-                        class="nav-item navigationitemsleft" role="presentation"><a class="nav-link active" href="index.html#repairs" style="font-family: Montserrat, sans-serif;font-size: 22px;color: #fff;">Repairs</a><a class="nav-link" href="index.html#services" style="color: #fff;font-family: Montserrat, sans-serif;font-size: 22px;">Service</a></li>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top text-center" style="background-color: rgb(33,150,243);width: 100%;max-width: none;height: auto;max-height: 200px;padding-right: 10px;padding-left: 10px;margin-right: 0px;opacity: 1;">
+        <div class="container-fluid"><img id="rmc-logo-2" style="opacity: 1;filter: brightness(85%) contrast(119%) sepia(0%);height: auto;width: 100%;max-width: 300px;max-height: 100px;" src="assets/img/rmc-logo-2.webp"><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"
+                style="background-color: rgba(33,150,243,0.42);"><span class="navbar-toggler-icon" style="color: #5D91FF;background-color: #fff;"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="background-color: rgba(33,150,243,0.42);max-width: none;">
+                <ul class="nav navbar-nav ml-auto" style="background-color: rgba(33,150,243,0.42);">
+                    <li class="nav-item text-left navigationitemsleft" role="presentation" style="background-color: rgba(33,150,243,0.42);"><a class="nav-link active text-left" href="index.html#index" style="font-family: Montserrat, sans-serif;font-size: 22px;color: #fff;background-color: rgba(33,150,243,0.42);padding-left: 20px;opacity: 1;">Home</a><a class="nav-link text-left"
+                            href="index.html#open-times" style="color: #fff;font-size: 22px;font-family: Montserrat, sans-serif;background-color: rgba(33,150,243,0.42);padding-left: 20px;">Open</a></li>
+                    <li class="nav-item text-left navigationitemsleft" role="presentation"
+                        style="background-color: rgba(33,150,243,0.42);"><a class="nav-link active text-left" href="index.html#repairs" style="font-family: Montserrat, sans-serif;font-size: 22px;color: #fff;background-color: rgba(33,150,243,0.42);padding-left: 20px;">Repairs</a><a class="nav-link text-left"
+                            href="index.html#services" style="color: #fff;font-family: Montserrat, sans-serif;font-size: 22px;background-color: rgba(33,150,243,0.42);padding-left: 20px;">Service</a></li>
                 </ul>
-            </div><img id="rmc-logo-2" class="img-thumbnail float-left mr-2 mb-1" src="assets/img/rmc-logo-2.webp" style="opacity: 1;filter: brightness(85%) contrast(119%) sepia(0%);"><button data-target="#navcol-1" data-toggle="collapse" class="navbar-toggler"><span class="navbar-toggler-icon" style="color: #5D91FF;background-color: #fff;"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item navigationitemsright" role="presentation"><a class="nav-link active" href="index.html#mot" style="color: #fff;font-family: Montserrat, sans-serif;font-size: 22px;">Mot</a><a class="nav-link" href="index.html#contact-us" style="color: #fff;font-size: 22px;font-family: Montserrat, sans-serif;">Contact Us</a></li>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1" style="background-color: rgba(33,150,243,0.42);">
+                <ul class="nav navbar-nav text-left mr-auto" style="background-color: rgba(33,150,243,0.42);">
+                    <li class="nav-item text-left navigationitemsright" role="presentation" style="background-color: rgba(33,150,243,0.42);"><a class="nav-link active text-left" href="info.html#heading-2" style="color: #fff;font-size: 22px;font-family: Montserrat, sans-serif;padding-left: 20px;background-color: rgba(33,150,243,0.42);" target="">Our Service's</a><a class="nav-link text-left"
+                            href="index.html#contact-us" style="color: #fff;font-size: 22px;font-family: Montserrat, sans-serif;background-color: rgba(33,150,243,0.42);padding-left: 20px;">Contact Us</a></li>
+                    <li class="nav-item text-left navigationitemsright"
+                        role="presentation" style="background-color: rgba(33,150,243,0.42);opacity: 1;"><a class="nav-link active text-left" href="index.html#mot" style="color: #fff;font-family: Montserrat, sans-serif;font-size: 22px;background-color: rgba(33,150,243,0.42);padding-left: 20px;opacity: 1;">Mot</a><a class="nav-link text-left"
+                            href="info.html" style="color: #fff;font-size: 22px;font-family: Montserrat, sans-serif;padding-left: 20px;background-color: rgba(33,150,243,0.42);opacity: 1;" target="_top">Info</a></li>
                 </ul>
-        </div>
+            </div>
         </div>
     </nav>
     <div class="d-flex" id="promo" style="margin-top: 0px;height: 100%;width: 100%;filter: blur(0px);padding: 0px;padding-top: 0px;background-size: contain;background-position: top;background-repeat: no-repeat;min-height: 0px;padding-bottom: 0px;background-image: url(&quot;none&quot;);">
-        <div class="container-fluid text-center d-lg-flex justify-content-lg-center align-items-lg-center" id="our-services" style="width: 100%;margin-top: 0px;padding: 0px;"><img src="assets/img/cit-bus-1.webp" style="background-size: contain;background-repeat: no-repeat;width: 100%;height: 100%;margin-top: 0px;"></div>
+        <div class="container-fluid text-center d-lg-flex justify-content-lg-center align-items-lg-center" id="our-services" style="width: 100%;margin-top: 0px;padding: 0px;"><img id="ourservices" src="assets/img/cit-bus-1.webp" style="background-size: contain;background-repeat: no-repeat;width: 100%;height: 100%;margin-top: 0px;"></div>
     </div>
     <div class="container-fluid text-center heading-2" style="padding-top: 0px;padding-bottom: 0px;height: auto;max-height: none;background-color: #fff;margin-top: 30px;margin-bottom: 10px;"><i class="fa fa-wrench" style="font-size: 44px;color: #2196F3;margin-bottom: 10px;"></i>
         <h4>Our Services</h4>
@@ -51,48 +62,64 @@
                         team of qualified technicians undertakes continuous Bosch training and this ensures we are always up-to-date with new technology and enables us to provide accurate diagnosis, service and repairs on all makes and model of car and
                         light commercial vehicle. Our specialist diagnostic services are carried out using state-of-the-art equipment by Bosch and we use only the highest quality parts and oils. No job is too big or too small.</p>
                 </div>
-                <div class="col-md-6" style="padding-left: 0px;padding-right: 0px;width: 100%;max-width: none;">
+                <div class="col-md-6" style="padding-left: 0px;padding-right: 0px;width: 100%;max-width: 100%;">
                     <p class="text-justify flex-wrap align-items-lg-start" style="font-family: Montserrat, sans-serif;font-weight: normal;padding-right: 10px;padding-left: 10px;"><img class="float-left" src="assets/img/bosch-sign.webp" style="width: 130px;height: 130px;margin-right: 5px;margin-bottom: 5px;margin-top: 5px;">The Bosch Car Service network works to a Bosch Car Service Code of Practice. The Consumer Codes
                         Approval Scheme, run by the Trading Standards Institute, has approved the Bosch Car Service Code of Practice. This commitment to customer care gives you peace of mind in knowing that you are going to be given not only the best
                         technical service, but also the best customer service by Reigate Motor Company.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div style="margin-top: 40px;margin-bottom: 40px;">
-        <div class="container">
-            <div class="row text-left d-md-flex justify-content-md-center">
-                <div class="col-md-4 text-center" style="width: 350px;min-width: none;max-width: 350px;">
-                    <ul class="list-unstyled text-left">
-                        <li><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Servicing</li>
-                        <li class="text-left" style="max-width: none;width: 100%;"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Repairs</li>
-                        <li class="text-left justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Cooling Systems</li>
-                        <li class="text-left justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Collection &amp; Delivery</li>
-                        <li class="text-left justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Courtesy lift home</li>
-                        <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Wheel Alignment</li>
-                        <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Emissions Repairs</li>
-                        <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Suspension</li>
-                        <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Diagnostic Testing</li>
-                        <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Electrical Repairs</li>
-                    </ul>
-                </div>
-                <div class="col-md-4" style="width: 180px;max-width: 180px;"></div>
-                <div class="col-md-4" style="width: 350px;max-width: 350px;">
-                    <ul class="list-unstyled text-left">
-                        <li class="d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 60px;"></i>Brake Repairs</li>
-                        <li class="text-left d-lg-flex justify-content-lg-start" style="max-width: none;width: 100%;"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 60px;"></i>Clutch's</li>
-                        <li class="text-left d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 60px;"></i>AirCon</li>
-                        <li class="d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 60px;"></i>New Tyres</li>
-                        <li class="d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 60px;"></i>Fuel Systems</li>
-                        <li class="d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 60px;"></i>Exhaust</li>
-                        <li class="d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 60px;"></i>Loan Car</li>
-                        <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 60px;"></i>MOT’s</li>
-                        <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 60px;"></i>Steering</li>
-                        <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 60px;"></i>Starting</li>
-                    </ul>
+        <section style="width: 100%;height: auto;opacity: 1;padding-bottom: 40px;padding-top: 60px;max-width: 100%;">
+            <div class="container" style="width: 100%;max-width: 85%;">
+                <div class="row">
+                    <div class="col-lg-4" style="width: 100%;">
+                        <div class="card mb-4 box-shadow rounded-0"><img class="img-fluid card-img-top w-100 d-block d-flex rounded-0" src="assets/img/car-service.webp" style="height: 100%;width: 100%;min-height: auto;">
+                            <div class="card-body">
+                                <ul class="list-unstyled text-left">
+                                    <li><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Servicing</li>
+                                    <li class="text-left" style="max-width: none;width: 100%;"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Repairs</li>
+                                    <li class="text-left justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Cooling Systems</li>
+                                    <li class="text-left justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Collection/Delivery</li>
+                                    <li class="text-left justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Courtesy lift home</li>
+                                    <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Wheel Alignment</li>
+                                    <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Steering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" style="width: 100%;">
+                        <div class="card mb-4 box-shadow"><img class="img-fluid card-img-top w-100 d-block d-flex" src="assets/img/car-engine2.webp" style="height: 100%;min-height: auto;width: 100%;max-height: none;">
+                            <div class="card-body" style="min-height: 1px;height: 219.932;">
+                                <ul class="list-unstyled text-left">
+                                    <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Emissions Repairs</li>
+                                    <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Suspension</li>
+                                    <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Diagnostic Testing</li>
+                                    <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Electrical Repairs</li>
+                                    <li class="text-left d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Brake Repairs</li>
+                                    <li class="text-left d-lg-flex justify-content-lg-start" style="max-width: none;width: 100%;"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Clutch's</li>
+                                    <li class="text-left d-lg-flex justify-content-lg-start" style="max-width: none;width: 100%;"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Petrol &amp; Diesel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" style="width: 100%;">
+                        <div class="card mb-4 box-shadow"><img class="img-fluid card-img-top w-100 d-block d-flex" src="assets/img/tyre-1.webp" style="height: 100%;width: 100%;">
+                            <div class="card-body text-left">
+                                <ul class="list-unstyled text-left">
+                                    <li class="text-left d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>AirCon</li>
+                                    <li class="d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>New Tyres</li>
+                                    <li class="d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Fuel Systems</li>
+                                    <li class="d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Exhaust</li>
+                                    <li class="d-lg-flex justify-content-lg-start"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Loan Car</li>
+                                    <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>MOT’s</li>
+                                    <li class="justify-content-lg-center"><i class="fa fa-check" style="font-size: 20px;opacity: 0.80;color: rgb(33,150,243);margin-right: 5px;margin-left: 0px;"></i>Starting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <div style="padding-top: 10px;padding-right: 15px;padding-bottom: 30px;padding-left: 15px;margin-top: 0px;height: auto;margin-bottom: 0px;color: rgb(33,150,243);background-color: #2196f3;">
         <div class="container" style="width: 100%;color: rgb(33,150,243);">
@@ -110,7 +137,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card mb-4 box-shadow rounded-0"><img class="rounded-circle img-fluid card-img-top w-100 d-block rounded-0" src="assets/img/service2.webp">
+                    <div class="card mb-4 box-shadow rounded-0"><img class="rounded-circle img-fluid card-img-top w-100 d-block rounded-0" src="assets/img/service2.webp" style="width: 100%;height: 100%;">
                         <div class="card-body">
                             <h4 class="card-title">Service</h4>
                             <p class="card-text">Intermediate Service<br>Full Service<br>Aircon Service<br>Brake Fluid Service<br></p>
@@ -119,7 +146,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card mb-4 box-shadow"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/engine2.webp">
+                    <div class="card mb-4 box-shadow"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/engine2.webp" style="width: 100%;height: 100%;">
                         <div class="card-body">
                             <h4 class="card-title">Repairs</h4>
                             <p class="card-text">Mechanical Repairs<br>Electrical Repairs<br>Clutch Repairs<br>Suspension Repairs<br></p>
@@ -128,7 +155,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card mb-4 box-shadow"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/Bosch-mot-sign.webp">
+                    <div class="card mb-4 box-shadow"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/Bosch-mot-sign.webp" style="width: 100%;height: 100%;">
                         <div class="card-body">
                             <h4 class="card-title">Mot</h4>
                             <p class="card-text">Cars<br>Light Vans<br>While-U-Wait<br>Waiting Area<br></p>
@@ -139,54 +166,6 @@
             </div>
         </div>
     </section>
-    <div class="text-center" id="contact-us" style="padding-top: 30px;padding-right: 15px;padding-bottom: 30px;padding-left: 15px;margin-top: 0px;height: auto;margin-bottom: 0px;width: 100%;background-color: #2196f3;">
-        <div class="container">
-            <div class="row row-cols-1 text-center d-sm-flex d-lg-flex justify-content-sm-center justify-content-lg-center">
-                <div class="col-md-4 text-center" style="margin-bottom: 0px;">
-                    <h4 style="color: #fff;margin-top: 10px;font-family: Montserrat, sans-serif;font-weight: bold;">Contact Details</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="padding-top: 70px;padding-right: 15px;padding-bottom: 50px;padding-left: 15px;margin-top: 0px;height: auto;margin-bottom: 0px;">
-        <div class="container d-flex justify-content-center" style="width: 100%;">
-            <div class="row text-center d-lg-flex justify-content-lg-center" style="width: 100%;">
-                <div class="col text-center" style="margin-bottom: 0px;padding-right: 10px;padding-left: 10px;min-height: 248.761px;width: 100%;max-width: 100%;">
-                    <div class="card mb-4 box-shadow rounded-0">
-                        <div class="card-body" style="padding: 15px;height: 222.766px;min-height: 222.766px;"><i class="fa fa-phone pulse animated infinite" style="font-size: 53px;color: #2196F3;"></i>
-                            <h6 style="color: rgb(73,80,87);font-size: 19px;font-family: Montserrat, sans-serif;">Phone: 01737 244000<br></h6><i class="fa fa-envelope" style="font-size: 53px;color: #2196F3;padding-top: 10px;"></i><div class="email"><a href="mailto:Service@ReigateMotorCompany.co.uk"><span style="color: #000; text-size: 20;">Service@ReigateMotorCompany.co.uk</span></a><br /></div></div>
-                    </div>
-                </div>
-                <div class="col" style="margin-bottom: 0px;padding: 0px 10px;width: 100%;max-width: 100%;">
-                    <div class="card mb-4 box-shadow rounded-0" style="width: 100%;">
-                        <div class="card-body text-center" style="padding: 15px;width: 100%;"><i class="fa fa-globe" style="color: #2196F3;font-size: 53px;"></i>
-                            <p class="card-text">Reigate Motor Company<br>2 Reigate Road<br>Sidlow<br>Reigate<br>Surrey<br>RH2 8QH<br></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="background-color: #2196F3;padding-top: 50px;padding-bottom: 50px;">
-        <div class="container" style="width: 100%;height: 15%;">
-            <div class="row">
-                <div class="col-md-12" style="width: 100%;">                 <div class="container-fluid" style="width: 100%; height: 100%; margin-top: 0px;">
-            <div id="content" class=" span8 content-sidebar-right">
-              <article id="post-14" class="post-14 page type-page status-publish hentry">
-                <div class="entry-summary">
-                  <div style="position: relative; padding-bottom: 70%; padding-top: 25px; height: 0;">
-                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.9903064840933!2d-0.20082384228787298!3d51.20818164944958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb68b97c85b7793a9!2sReigate%20Motor%20Company!5e0!3m2!1sen!2suk!4v1587028747026!5m2!1sen!2suk"
-                      width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                  </div>
-              </article>
-            </div>
-          </div>
-     </div>
-            </div>
-        </div>
-        <div class="text-center position-absolute w-100 mt-4"><a href="#top"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-dark"></i><i class="fa fa-angle-up fa-stack-1x text-white"></i></span></a></div>
-    </div>
     <div class="footer-basic" style="font-family: Montserrat, sans-serif;background-color: rgb(75,76,77);height: auto;">
         <footer id="open-times" style="background-color: rgb(75,76,77);">
             <div class="social"><a href="#"><i class="icon ion-social-instagram" style="color: #fff;"></i></a><a href="#"><i class="icon ion-social-snapchat" style="color: #fff;"></i></a><a href="#"><i class="icon ion-social-twitter" style="color: #fff;"></i></a><a href="#"><i class="icon ion-social-facebook" style="color: #fff;"></i></a></div>
@@ -213,6 +192,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/Bootstrap-DataTables.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 
